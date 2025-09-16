@@ -50,7 +50,7 @@ from fastapi.middleware.cors import CORSMiddleware
 origins = [
     "http://localhost:5173",  # Vite dev server
     "https://portsisthebest.netlify.app", # uncomment if using CRA
-    "http://ports.blog",
+    "https://ports.blog",
 ]
 
 api_app.add_middleware(

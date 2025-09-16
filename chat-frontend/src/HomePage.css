@@ -1,0 +1,87 @@
+/* HomePage.css */
+
+/* Wrapper to scope styles only to HomePage */
+.home-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+}
+
+/* Light & Dark mode backgrounds */
+.home-page.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.home-page.dark {
+  background-color: #0a0a2a;
+  color: #ffffff;
+}
+
+/* Toggle button */
+.home-page .toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background: #48018f;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.home-page .toggle-btn:active {
+  transform: scale(0.9);
+}
+
+/* Typing animation text */
+.home-page .typing {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #48018f;
+}
+
+.home-page .cursor {
+  margin-left: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #48018f;
+  animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Chat link */
+.home-page .chat-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #48018f;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.home-page .chat-link:hover {
+  transform: scale(1.05);
+}

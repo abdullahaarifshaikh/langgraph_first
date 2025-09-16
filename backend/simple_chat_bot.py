@@ -49,8 +49,8 @@ from fastapi.middleware.cors import CORSMiddleware
 # During development use the exact origin of your frontend (Vite default: http://localhost:5173).
 origins = [
     "http://localhost:5173",  # Vite dev server
-    # "http://localhost:3000", # uncomment if using CRA
-    # "http://127.0.0.1:5173",
+    "https://portsisthebest.netlify.app", # uncomment if using CRA
+    "http://ports.blog",
 ]
 
 api_app.add_middleware(

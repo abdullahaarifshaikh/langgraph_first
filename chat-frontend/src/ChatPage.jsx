@@ -5,7 +5,7 @@ export default function ChatPage() {
   const [messages, setMessages] = useState([]) // { sender: 'user'|'bot', text }
   const [loading, setLoading] = useState(false)
   const messagesRef = useRef(null)
-  const API_URL = (import.meta.env.VITE_API_URL ?? "http://localhost:8000") + "/chat/";
+  const API_URL = (import.meta.env.VITE_API_URL ?? "https://langgraph-first.onrender.com") + "/chat";
 
 
   // auto-scroll on new messages
